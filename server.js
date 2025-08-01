@@ -7,7 +7,9 @@ const citaRoutes = require("./routes/Cita");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: ['https://divorcios.do'], // aquí va tu dominio final
+}));
 app.use(express.json());
 app.use('/api/consulta', consultaRoutes);
 app.use("/api/cita", citaRoutes);
