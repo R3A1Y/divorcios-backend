@@ -2,8 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const consultaRoutes = require('./routes/Consulta');
-const citaRoutes = require("./routes/Cita");
+const consultaRoutes = require('../routes/Consulta');
+const citaRoutes = require("../routes/Cita");
 
 const app = express();
 
