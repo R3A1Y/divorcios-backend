@@ -23,7 +23,7 @@ router.post('/', async (req, res) => {
         // Enviar correo
         await transporter.sendMail({
             from: `"Divorcios Online" <${process.env.EMAIL_USER}>`,
-            to: process.env.EMAIL_USER,
+            to: process.env.EMAIL_RECEIVER,
             subject: 'Nueva consulta recibida',
             html: `
     <h3>Consulta de: ${nombre}</h3>

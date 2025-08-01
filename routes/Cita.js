@@ -46,7 +46,7 @@ router.post("/", async (req, res) => {
     // Enviar correo con detalles de la cita
     await transporter.sendMail({
       from: `"Divorcios Online" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER,
+      to: process.env.EMAIL_RECEIVER,
       subject: "Nueva cita reservada",
       html: `
         <h3>Nueva cita reservada</h3>
